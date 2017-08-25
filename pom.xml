@@ -23,7 +23,7 @@
     </parent>
 
     <properties>
-        <start-class>com.adeveloperdiary.ServletInitializer</start-class>
+        <start-class>org.innovation.day.SpringServletInitializer</start-class>
     </properties>
 
     <dependencies>
@@ -37,12 +37,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <version>1.5.6.RELEASE</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-tomcat</artifactId>
-                </exclusion>
-            </exclusions>
+            <!--<exclusions>-->
+                <!--<exclusion>-->
+                    <!--<groupId>org.springframework.boot</groupId>-->
+                    <!--<artifactId>spring-boot-starter-tomcat</artifactId>-->
+                <!--</exclusion>-->
+            <!--</exclusions>-->
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
@@ -56,6 +56,18 @@
             <!--<version>9.4.1212</version>-->
             <!--<scope>compile</scope>-->
         <!--</dependency>-->
+        <dependency>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>mssql-jdbc</artifactId>
+            <version>6.2.1.jre8</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.ibm.db2.jcc</groupId>
+            <artifactId>db2jcc4</artifactId>
+            <!--<version>10.1</version>-->
+            <scope>compile</scope>
+        </dependency>
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
